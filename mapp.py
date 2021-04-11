@@ -55,12 +55,12 @@ class Graph:
         self.adjlist = {}
         self.nodes = nodes
 
-    def add_edge(self, src, dst) :
+    def add_edge(self, src, dst):
 
-        if src not in self.adjlist :
-            self.adjlist[src] = []
+        if src not in self.adjlist:
+            self.adjlist[int(src)] = []
 
-        self.adjlist[src].append(dst)
+        self.adjlist[int(src)].append(dst)
 
     def display_adjlist(self) :
         for item in self.adjlist.items() :

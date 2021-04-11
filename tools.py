@@ -5,7 +5,7 @@ def djikstra(graph, pair):
     pass
 
 
-def find_path(graph, pair):
+def find_path(graph, pair, endpts):
     """"
     Function to check if there exists a path for a given source-destination pair
     Adapted from https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/
@@ -26,6 +26,8 @@ def find_path(graph, pair):
                 v = prev[v]
             path.reverse()
             return path
+        elif v != src and v in endpts:
+            continue
 
         for u in graph.adjlist[v]:
             if not visited[u]:
