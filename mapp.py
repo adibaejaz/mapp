@@ -34,9 +34,9 @@ def build_graph(input_file):
 
     while(True):
         line = f.readline()
-        if not line:
-            break
         line = line.strip().split(" ")
+        if not line or line[0] == "SOLUTIONS":
+            break
         pairs.append((int(line[0]), int(line[1])))
 
     # print(pairs)
