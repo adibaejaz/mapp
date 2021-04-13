@@ -1,5 +1,6 @@
 NUM_VERTICES = 100
 NUM_PAIRS = 10
+from graph import Graph
 
 def djikstra(graph, pair):
     pass
@@ -19,6 +20,7 @@ def find_path(graph, pair, endpts):
 
     while queue:
         v = queue.pop(0)
+
         if v == dst:
             path = [dst]
             while prev[v]:
@@ -26,9 +28,9 @@ def find_path(graph, pair, endpts):
                 v = prev[v]
             path.reverse()
             return path
+
         elif v != src and v in endpts:
             continue
-
         for u in graph.adjlist[v]:
             if not visited[u]:
                 queue.append(u)
@@ -38,6 +40,15 @@ def find_path(graph, pair, endpts):
     return None
 
 
+## TESTING ##
+
+graph = Graph(NUM_VERTICES)
+for x in range(NUM_VERTICES):
+    for y in range(NUM_VERTICES):
+        if x - y:
+            graph.add_edge(x, y)
+# print(find_path(graph, (2, 4), [3]))
+# print(find_path(graph, (2, 4), []))
 
 
 

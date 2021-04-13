@@ -15,7 +15,7 @@ def fixed_greedy(graph, pairs):
         endpts.append(pair[1])
 
     for pair in pairs:
-        path = find_path(residual, pair, endpts)
+        path = find_path(graph, pair, endpts)
         if path:
             soln.append(path)
             residual = compute_residual(residual, path)
