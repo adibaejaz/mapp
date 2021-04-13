@@ -1,7 +1,7 @@
 from sys import argv
 from greedy import greedy
 from graph import Graph
-from tools import NUM_VERTICES, NUM_PAIRS
+from tools import NUM_VERTICES
 # from planar import planar
 
 def main():
@@ -12,9 +12,6 @@ def main():
     input_file = argv[1]
     graph, pairs = build_graph(input_file)
 
-    for v, adj in graph.adjlist.items():
-        print(v, ":", adj)
-
     # if is_planar(graph):
     #   return planar(graph, pairs)
 
@@ -22,7 +19,7 @@ def main():
 
 def build_graph(input_file):
     pairs = []
-    graph = Graph(100)
+    graph = Graph(NUM_VERTICES)
 
     f = open(input_file, "r")
     f.readline()

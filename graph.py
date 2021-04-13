@@ -2,12 +2,12 @@ from tools import NUM_VERTICES
 
 class Graph:
 
-    def __init__(self, nodes) :
+    def __init__(self, nodes):
         # Store the adjacency list as a dictionary
         # 0 : { 1, 2 }
         # 1 : { 3, 4 }
         self.adjlist = {}
-        for x in range(NUM_VERTICES + 1):
+        for x in range(nodes):
             self.adjlist[x] = []
         self.nodes = nodes
 

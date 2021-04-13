@@ -13,8 +13,8 @@ def find_path(graph, pair, endpts):
     """
     src = pair[0]
     dst = pair[1]
-    visited = [False] * (NUM_VERTICES + 1)
-    prev = [None] * (NUM_VERTICES + 1)
+    visited = [False] * NUM_VERTICES
+    prev = [None] * NUM_VERTICES
     queue = [src]
     visited[src] = True
 
@@ -38,18 +38,4 @@ def find_path(graph, pair, endpts):
                 prev[u] = v
 
     return None
-
-
-## TESTING ##
-
-graph = Graph(NUM_VERTICES)
-for x in range(NUM_VERTICES):
-    for y in range(NUM_VERTICES):
-        if x - y:
-            graph.add_edge(x, y)
-# print(find_path(graph, (2, 4), [3]))
-# print(find_path(graph, (2, 4), []))
-
-
-
 
