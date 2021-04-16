@@ -2,6 +2,7 @@ from tools import djikstra, find_path
 
 def greedy(graph, pairs):
 
+    # permuted_pairs =
     return fixed_greedy(graph, pairs)
 
 

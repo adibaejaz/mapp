@@ -1,0 +1,3 @@
+- change any path to shortest path
+- change any path to path whose residual has the largest min cut value
+- permute sources; remember they are trying to trick your order

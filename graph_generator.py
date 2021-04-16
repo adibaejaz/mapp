@@ -9,7 +9,8 @@ def generate_graph():
     for x in range(NUM_VERTICES):
         print(f"{x}:", end=" ")
         graph.update({x: []})
-        randomlist = sample(range(NUM_VERTICES), randint(5, 10))
+        randomlist = sample(range(NUM_VERTICES), randint(1,3))
+        # randomlist = sample(range(NUM_VERTICES), randint(1, 10))
         for num in randomlist:
           if num != x:
                 print(num, end=" ")
@@ -25,8 +26,8 @@ def generate_pairs(graph):
     print("PAIRS")
     paths = []
     rand_srcs = sample(range(NUM_VERTICES), NUM_PAIRS)
-    print(rand_srcs)
-    rand_lens = [randint(1, 10) for x in range(NUM_PAIRS)]
+    rand_lens = [randint(1, 5) for x in range(NUM_PAIRS)]
+    # rand_lens = [randint(1, 5) for x in range(NUM_PAIRS)]
     used = [False] * NUM_VERTICES
     for src in rand_srcs:
         used[src] = True

@@ -1,0 +1,60 @@
+(base) dyn-160-39-192-169:mapp adibaejaz$ python mapp.py graphs/sparse_input1.txt 
+(74, 35) success
+(12, 69) success
+(22, 6) success
+(24, 59) success
+(79, 42) success
+(16, 8) success
+(48, 54) success
+(64, 51) success
+(14, 41) failed
+(58, 15) failed
+[[74, 35], [12, 63, 44, 69], [22, 25, 49, 13, 6], [24, 59], [79, 50, 42], [16, 26, 53, 83, 8], [48, 19, 34, 90, 54], [75, 93, 99, 51]]
+(base) dyn-160-39-192-169:mapp adibaejaz$ python mapp.py graphs/sparse_input2.txt 
+(95, 40) failed
+(90, 86) success
+(47, 12) success
+(99, 7) success
+(13, 69) success
+(26, 67) failed
+(71, 44) success
+(23, 52) success
+(56, 29) success
+(82, 92) success
+[[90, 86], [47, 6, 12], [99, 25, 79, 30, 7], [13, 69], [71, 59, 2, 44], [23, 52], [56, 29], [82, 22, 60, 92]]
+(base) dyn-160-39-192-169:mapp adibaejaz$ python mapp.py graphs/sparse_input3.txt 
+(97, 83) success
+(47, 67) success
+(95, 56) success
+(89, 39) success
+(52, 70) success
+(13, 88) success
+(53, 71) success
+(69, 79) success
+(36, 2) failed
+(22, 80) failed
+[[97, 83], [47, 67], [95, 62, 56], [89, 39], [52, 70], [13, 88], [53, 71], [69, 79]]
+(base) dyn-160-39-192-169:mapp adibaejaz$ python mapp.py graphs/sparse_input4.txt 
+(54, 42) success
+(27, 32) success
+(80, 10) success
+(20, 35) success
+(77, 59) success
+(16, 25) success
+(55, 67) success
+(0, 61) success
+(85, 8) success
+(43, 93) failed
+[[54, 42], [27, 1, 32], [80, 95, 10], [20, 11, 35], [77, 72, 86, 59], [16, 18, 92, 25], [55, 67], [13, 50, 61], [85, 4, 8]]
+(base) dyn-160-39-192-169:mapp adibaejaz$ python mapp.py graphs/sparse_input5.txt 
+(22, 82) success
+(23, 99) success
+(52, 75) success
+(50, 11) success
+(59, 25) success
+(98, 65) success
+(73, 35) failed
+(1, 2) success
+(80, 32) success
+(91, 43) success
+[[22, 37, 82], [23, 94, 99], [52, 62, 34, 75], [50, 26, 11], [59, 4, 13, 46, 25], [98, 67, 65], [1, 2], [80, 27, 48, 70, 3, 7, 83, 32], [91, 9, 33, 43]]

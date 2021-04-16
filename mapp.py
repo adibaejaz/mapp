@@ -15,7 +15,14 @@ def main():
     # if is_planar(graph):
     #   return planar(graph, pairs)
 
-    print(greedy(graph, pairs))
+    paths = greedy(graph, pairs)
+
+    with open("4231output.txt", "x") as f:
+        for path in paths:
+            print(*path)
+            f.write(" ".join(str(x) for x in path))
+            f.write("\n")
+
 
 def build_graph(input_file):
     pairs = []
@@ -38,6 +45,8 @@ def build_graph(input_file):
         if not line or line[0] == "SOLUTIONS":
             break
         pairs.append((int(line[0]), int(line[1])))
+
+    f.close()
 
     return graph, pairs
 
