@@ -7,7 +7,7 @@ class Graph:
         # 0 : { 1, 2 }
         # 1 : { 3, 4 }
         self.adjlist = {}
-        for x in range(nodes):
+        for x in range(1, nodes + 1):
             self.adjlist[x] = []
         self.nodes = nodes
 

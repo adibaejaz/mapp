@@ -6,18 +6,15 @@ def generate_graph():
     """Function to generate and print a random graph in specified format."""
     graph = {}
     print("EDGES")
-    for x in range(NUM_VERTICES):
+    for x in range(1, NUM_VERTICES + 1):
         print(f"{x}:", end=" ")
         graph.update({x: []})
-        randomlist = sample(range(NUM_VERTICES), randint(1,3))
-        # randomlist = sample(range(NUM_VERTICES), randint(1, 10))
+        randomlist = sample(range(1, NUM_VERTICES + 1), randint(1,3))       # sparse option
+        # randomlist = sample(range(1, NUM_VERTICES + 1), randint(1, 10))   # dense option
+        print(" ".join(str(num) for num in randomlist if num != x))
         for num in randomlist:
-          if num != x:
-                print(num, end=" ")
+            if num != x:
                 graph[x].append(num)
-                if num > 99:
-                    print("BAD NUM!!")
-        print("")
 
     return graph
 
@@ -25,10 +22,10 @@ def generate_pairs(graph):
 
     print("PAIRS")
     paths = []
-    rand_srcs = sample(range(NUM_VERTICES), NUM_PAIRS)
+    rand_srcs = sample(range(1, NUM_VERTICES + 1), NUM_PAIRS)
     rand_lens = [randint(1, 5) for x in range(NUM_PAIRS)]
     # rand_lens = [randint(1, 5) for x in range(NUM_PAIRS)]
-    used = [False] * NUM_VERTICES
+    used = [False] * (NUM_VERTICES + 1)
     for src in rand_srcs:
         used[src] = True
 

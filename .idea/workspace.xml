@@ -12,10 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b3903edf-8cd7-4e42-9761-b783756cf9c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4231output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/4231output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_generator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graphs/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/graphs/input1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/greedy.py" beforeDir="false" afterPath="$PROJECT_DIR$/greedy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/mapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618160240333</updated>
       <workItem from="1618160251311" duration="21941000" />
-      <workItem from="1618513415058" duration="1605000" />
+      <workItem from="1618513415058" duration="2951000" />
     </task>
     <servers />
   </component>

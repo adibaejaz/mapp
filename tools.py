@@ -13,8 +13,8 @@ def find_path(graph, pair, endpts):
     """
     src = pair[0]
     dst = pair[1]
-    visited = [False] * NUM_VERTICES
-    prev = [None] * NUM_VERTICES
+    visited = [False] * (NUM_VERTICES + 1)
+    prev = [None] * (NUM_VERTICES + 1)
     queue = [src]
     visited[src] = True
 

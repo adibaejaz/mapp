@@ -12,9 +12,6 @@ def main():
     input_file = argv[1]
     graph, pairs = build_graph(input_file)
 
-    # if is_planar(graph):
-    #   return planar(graph, pairs)
-
     paths = greedy(graph, pairs)
 
     with open("4231output.txt", "x") as f:
